@@ -39,6 +39,11 @@ header nav {
     border-bottom: 1px solid #f7f9fb;
 }
 
+header nav.sticky {
+    background-color: var(--bg-color);
+    padding: 13px 11%;
+}
+
 .logo img {
     max-width: 100%;
     height: auto;
@@ -161,4 +166,87 @@ section {
 .home-img img {
     width: 100%;
     height: auto;
+}
+
+/* ===== Feature section ===== */
+.feature-text h2 {
+    font-size: var(--h2-font);
+    font-size: 700;
+}
+
+.feature-text h2 span {
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+.feature-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.feature-box .box {
+    background-color: #e3ffe6;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    transition: all 0.45s ease;
+}
+
+.box .box-text h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--other-color);
+    margin-bottom: 1rem;
+}
+
+.box .box-text h3 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.box .box-text a {
+    display: inline-block;
+    background-color: var(--bg-color);
+    padding: 11px 23px;
+    border-radius: 30px;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 2.5rem;
+    transition: all 0.45s ease;
+}
+
+.box .box-text a:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    letter-spacing: 1px;
+}
+
+.box .box-image {
+    width: 170px;
+    height: auto;
+}
+
+.box .box-image img {
+    width: 100%;
+    height: auto;
+}
+
+.feature-box .box2 {
+    background-color: #fef2f2;
+}
+
+.feature-box .box3 {
+    background-color: #eff6ff;
+}
+
+.feature-box .box:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
 }
