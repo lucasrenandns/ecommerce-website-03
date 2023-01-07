@@ -192,7 +192,7 @@ section {
     padding: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 2rem;
     transition: all 0.45s ease;
 }
@@ -249,4 +249,105 @@ section {
 .feature-box .box:hover {
     cursor: pointer;
     transform: translateY(-5px);
+}
+
+/* ===== Product section ===== */
+.product-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 700;
+}
+
+.product-text h2 span {
+    color: var(--main-color);
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.product-content .box {
+    position: relative;
+}
+
+.product-content .box .box-image img {
+    width: 200%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 1.2rem;
+    transition: all 0.45s ease;
+}
+
+.product-content .box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.product-content .box h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--other-color);
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+.product-content .box .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.2rem;
+    flex-wrap: wrap;
+}
+
+.price button {
+    display: inline-block;
+    padding: 4px 16px;
+    background-color: transparent;
+    border: 2px solid #ef4444;
+    color: #ef4444;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.45s ease;
+}
+
+.price button:hover {
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.price .stars i {
+    color: #ef4444;
+    font-size: 18px;
+}
+
+.price .stars i:not(:last-child) {
+    margin-right: 4px;
+}
+
+.box .heart i {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 22px;
+    color: #ef4444;
+    width: 42px;
+    height: 42px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.45s ease;
+}
+
+.box .heart i:hover {
+    cursor: pointer;
+    background-color: #ef4444;
+    color: var(--bg-color);
 }

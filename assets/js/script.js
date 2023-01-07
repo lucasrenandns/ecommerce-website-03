@@ -1,5 +1,5 @@
-const headerNav = document.querySelector("header nav")
+const navegation = document.querySelector("header nav")
 
 window.addEventListener("scroll", function() {
-    headerNav.classList.toggle("sticky", window.scrollY > 0)
+    navegation.classList.toggle("sticky", window.scrollY > 0)
 })
