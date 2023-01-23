@@ -1,4 +1,7 @@
-// Scroll
+// Strict mode
+"use strict"
+
+// Normal scroll
 const navegation = document.querySelector(".navegation")
 const scrollArrow = document.getElementById("scroll-arrow")
 const menuIcon = document.getElementById("menu-icon")
